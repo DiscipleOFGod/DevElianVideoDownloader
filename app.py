@@ -8,7 +8,7 @@ import os
 
 
 app = Flask(__name__)
-CORS(app)  # Habilitar CORS para todas las rutas
+CORS(app)  
 
 # Ruta para la carpeta de descargas
 DOWNLOAD_FOLDER = 'downloads'
@@ -46,7 +46,7 @@ def download():
         os.makedirs(DOWNLOAD_FOLDER)
     stream.download(output_path=DOWNLOAD_FOLDER)
     
-    # Devolver el nombre del archivo descargado en la respuesta JSON
+    
     return jsonify({'message': 'Finalizado, descargue el archivo dandole click abajo⬇⬇⬇⬇⬇⬇', 'filename': stream.default_filename})
 
 @app.route('/downloadm', methods=['POST'])
