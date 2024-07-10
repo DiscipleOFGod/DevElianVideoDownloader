@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevElian Video Downloader</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="logo" id="logo"></div>
+  
+  <div class="container">
+    <a href="https://www.youtube.com/@DevElian11"><img src="{{ url_for('static', filename='develianlogo.png') }}" width="40px" height="60px"></a>
+    <h1>DevElian Video Downloader </h1>
+    <input type="text" id="url" placeholder="Escriba la URL de Youtube" required>
+    <button id="Buscar">Buscar</button>
+    <br><br>
+    <div id="vista" style="display: none;">
+      <img id="thumbnail" src="" width="200px">
+      <h2 id="title"></h2>
+
+    </div>
+    <button id="download-video">Descargar Video</button>
+    <button id="download-music">Descargar Audio</button>
+    <div id="message"></div>
+    <div id="download-link" style="display: none;">
+      <a id="file-link" href="" download>Descarga tu archivo aquí</a>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
