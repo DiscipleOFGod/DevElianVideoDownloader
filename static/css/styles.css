@@ -5,15 +5,15 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0; /* Fondo del body */
+  background-color: #f0f0f0; 
   overflow: visible; 
 }
 
 .logo {
   position: absolute;
-  width: 100px; /* Tamaño del logo */
-  height: 100px; /* Tamaño del logo */
-  background-image: url('develianlogo.png'); /* Ruta del logo */
+  width: 100px; 
+  height: 100px; 
+  background-image: url('develianlogo.png'); 
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
